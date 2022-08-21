@@ -1,11 +1,16 @@
 import React from "react";
-import FormControlArea from "./components/FormControlArea";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/home/Home";
+import Menubar from "./pages/shared/Menubar";
 
 const App = () => {
   return (
-    <main className="w-[90%] mx-auto my-10">
-      <FormControlArea />
-    </main>
+    <>
+      <Menubar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </>
   );
 };
 
