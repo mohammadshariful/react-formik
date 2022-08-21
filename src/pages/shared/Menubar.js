@@ -8,7 +8,7 @@ const Menubar = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li className="font-semibold text-lg">
-        <NavLink to="/users">Users</NavLink>
+        <NavLink to="/feature">Features</NavLink>
       </li>
       <li className="font-semibold text-lg">
         <NavLink to="/contact">Contact</NavLink>

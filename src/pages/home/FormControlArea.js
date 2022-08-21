@@ -1,8 +1,6 @@
 import { useFormik } from "formik";
 import React from "react";
-import useFormControl from "../../hooks/useFormControl";
-const FormControlArea = () => {
-  const { initialValues, onSubmit, validate } = useFormControl();
+const FormControlArea = ({ initialValues, onSubmit, validate }) => {
   const formik = useFormik({
     initialValues: initialValues,
     onSubmit: onSubmit,
